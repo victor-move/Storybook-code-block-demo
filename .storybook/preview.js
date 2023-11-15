@@ -1,0 +1,82 @@
+import '@storybook/addon-console';
+import { CUSTOM_VIEWPORTS } from './viewports';
+
+export const parameters = {
+  layout: 'fullscreen',
+  options: {
+    storySort: {
+      order: [
+        'Welcome',
+        [
+          'Getting Started',
+          'How to Contribute',
+          'Accessibility',
+          'Migration',
+          [
+            'Migration to 3.0',
+            [
+              'Introduction',
+              'Step-by-Step Guide',
+              'Theme Token Changes',
+              ['Token Migration Overview'],
+              'Component Changes',
+              'Migrating Type Components',
+              'Migrating Icon Components',
+              'Troubleshooting',
+            ],
+            'Migrating AutocompleteLegacy to Autocomplete',
+            'Migrating SearchBox to SearchBar',
+            'Migrating to Tabs V2',
+            'Earlier versions',
+          ],
+          'Release Changelog',
+        ],
+        'Theme',
+        'Illustrations',
+        'Layout',
+        ['Page Layout Overview', 'Breakpoint Guide', 'Container', 'Grid System'],
+        'Basic UI',
+        'User Input',
+        [
+          'Input Accessibility',
+          'Pickers',
+          'Checkbox and Radio',
+          ['Checkbox', 'Radio'],
+          'Text Input',
+          ['Text Input'],
+          'Text Area',
+          ['Text Area'],
+          'Select Input',
+          ['Select Input'],
+          'Input Dropdown',
+          'Input Sub-components',
+          'Form',
+        ],
+        'Search',
+        'Cards',
+        ['Action Card', 'Article Card', 'Collection Card', 'Neighborhood Card', 'News Card', 'Property Card', 'Property Card Horizontal', 'Card Sets'],
+        'Utilities',
+        'Navigation',
+        'Feedback',
+        'Data Display',
+        'Compositions',
+        'Accessibility',
+        'Custom Hooks',
+        'Global',
+        'SRP Components',
+        'Details Page',
+        'News and Insights',
+        'Deprecated',
+        'Internal',
+      ],
+    },
+  },
+  backgrounds: {
+    grid: {
+      disable: true,
+    },
+  },
+  viewport: {
+    viewports: CUSTOM_VIEWPORTS,
+  },
+};

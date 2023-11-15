@@ -1,0 +1,80 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+.env
+/allure-results
+/allure-report
+/_results_
+/reports
+/bundle
+.size-limit.json
+.vscode
+/tests/playwright/results
+.yalc
+junit.xml
+
+# production
+/build
+/dist
+/logs
+/lib
+/docs
+
+/storybook-static
+
+# misc
+.history
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.idea
+.VSCodeCounter
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+package-lock.json
+size-snapshot.json
+.tool-versions
+
+# storybook syntax hilighter chunks - revisit when upgrading storybook to v6
+# Ignore unused language chunks and maps
+#
+react-syntax-highlighter_languages_highlight_*.*.bundle.js
+react-syntax-highlighter_languages_highlight_*.*.bundle.js.map
+vendors~react-syntax-highlighter_languages_highlight_*.*.bundle.js
+vendors~react-syntax-highlighter_languages_highlight_*.*.bundle.js.map
+
+#
+# Unignore all the chunks storybook actually uses for MDX stories.
+#
+!react-syntax-highlighter_languages_highlight_jsx.*.bundle.js.map
+!react-syntax-highlighter_languages_highlight_bash.*.bundle.js.map
+!react-syntax-highlighter_languages_highlight_css.*.bundle.js.map
+!react-syntax-highlighter_languages_highlight_html.*.bundle.js.map
+!react-syntax-highlighter_languages_highlight_tsx.*.bundle.js.map
+!react-syntax-highlighter_languages_highlight_typescript.*.bundle.js.map
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Files to ignore while developing in BETA branch
+# TODO [3.0] Before release: remove these items from ignore.
+# At 3.0 release, the `CHANGELOG.md` file from master should be
+# moved to `documentation/changelog/legacy` as `CHANGELOG_2.0.md`
+/CHANGELOG.md
+/CHANGELOG_IN_PR.md
